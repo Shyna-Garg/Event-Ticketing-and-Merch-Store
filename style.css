@@ -37,7 +37,7 @@
 
 
 .page1{
-    height: 100vh;
+    min-width:100vh;
     width: 100vw;
     background-color: black;
 }
@@ -79,7 +79,7 @@ padding-left: 450px;
     position: relative;
 }
 .page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 background-color: #efa078be;
 }
@@ -133,7 +133,7 @@ button:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
 }
 .page3{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     background-color: #fff;
     text-align: center;
@@ -255,6 +255,7 @@ color: #1E90FF;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    width: 100vw;
     padding: 20px;
 }
 .cont {
