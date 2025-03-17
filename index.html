@@ -33,6 +33,7 @@
 </div>
 </div>
 </section>
+
 <section id="page2">
 <div class="page2">
     <div id="navbar1">
@@ -44,25 +45,61 @@
     </div>
     <div class="box" data-image="spect.jpeg">
         <h1>SPECTRUM</h1>
-        <button>REGISTER NOW</button>
+        <button class="register" id="spect">REGISTER NOW</button>
     </div>
 <div class="box" data-image="ai.jpeg">
     <h1>AI WORKSHOP</h1>
-    <button>REGISTER NOW</button>
+    <button class="register" id="ai">REGISTER NOW</button>
 </div>
 <div class="box" data-image="tech.jpeg">
     <h1>TECHNOVATE</h1>
-    <button>REGISTER NOW</button>
+    <button class="register" id="tech">REGISTER NOW</button>
 </div>
 <div class="box" data-image="algo.jpeg">
     <h1>ALGO ARENA</h1>
-    <button>REGISTER NOW</button>
+    <button class="register" id="algo">REGISTER NOW</button>
 </div>
 <div class="box" data-image="hack.jpeg">
     <h1>HACKATHON</h1>
-    <button>REGISTER NOW</button>
+    <button class="register" id="hack">REGISTER NOW</button>
 </div>
 </div>
+<section id="formPage" style="display: none;">
+    <div class="container">
+        <h1 id="eventTitle">Event Registration</h1>
+        <form id="registrationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            
+            <label for="roll">Roll Number:</label>
+            <input type="text" id="roll" placeholder="Roll no." required>
+            
+            <label for="branch">Branch (Course):</label>
+            <input type="text" id="branch" placeholder="Branch/Course" required>
+            
+            <label for="year">Year:</label>
+            <select id="year" required>
+                <option value="" disabled selected>Select Year</option>
+                <option>1st</option>
+                <option>2nd</option>
+                <option>3rd</option>
+                <option>4th</option>
+            </select>
+            
+            <label for="section">Section:</label>
+            <select id="section" required>
+                <option value="" disabled selected>Select Section</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+                <option>D</option>
+            </select>
+            
+            <button type="submit" id="submit">Submit</button>
+            <button type="button" id="back"> 🔙 Go Back</button>
+        </form>
+    </div>
+</section>
 </section>
 
 <section id="page3">
@@ -75,56 +112,63 @@
             <a href="#">STICKERS</a>
         </div>
         <div class="hello">
-        <div class="toptext">
-    <h1>Exclusive Merch Collection</h1>
-    <h1>Exclusive Merch Collection</h1>
-</div>
-</div>
-    <div class="grid">
-        <div class="product">
-            <img src="https://5.imimg.com/data5/ANDROID/Default/2022/5/BX/JZ/VU/13065935/product-jpeg.jpg" alt="Cool T-Shirt">
-            <h3> T-Shirt</h3>
-            <p>₹499</p>
-            <button>Add to Cart</button>
+            <div class="toptext">
+                <h1>Exclusive Merch Collection</h1>
+                <h1>Exclusive Merch Collection</h1>
+            </div>
         </div>
-        <div class="product">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVWKUj5itDZh6SmsFJBz9HSFhBKX_eHNV3EQ&s" alt="Event Hoodie">
-            <h3>Hoodie</h3>
-            <p>₹999</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZeQrSd1wAQmhSm5qOcTM4-2eO25QEjqKow&s" alt="Cool Cap">
-            <h3>Cap</h3>
-            <p>₹299</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdcImQhcMIMysUb7_GpZf3eX-Q1nRoDYeWqg&s" alt="Event Mug">
-            <h3>Mug</h3>
-            <p>₹199</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLyIsRgio0Mc4HDlengv8oG5onrEkXB5RHcw&s" alt="Event Mug">
-            <h3>Sticker</h3>
-            <p>₹99</p>
-            <button>Add to Cart</button>
-        </div>
-        <div class="product">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8j6eYg3lVKU8kOMTUfhIuhN78BHYP5Po8Mg&s" alt="Event Mug">
-            <h3>Band</h3>
-            <p>₹99</p>
-            <button>Add to Cart</button>
+        <div class="grid">
+            <div class="product">
+                <img src="https://5.imimg.com/data5/ANDROID/Default/2022/5/BX/JZ/VU/13065935/product-jpeg.jpg" alt="Cool T-Shirt">
+                <h3> T-Shirt</h3>
+                <p>₹499</p>
+                 <button class="add-to-cart" id="order" data-name="T-Shirt" data-price="499" data-image="https://5.imimg.com/data5/ANDROID/Default/2022/5/BX/JZ/VU/13065935/product-jpeg.jpg">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVWKUj5itDZh6SmsFJBz9HSFhBKX_eHNV3EQ&s" alt="Event Hoodie">
+                <h3>Hoodie</h3>
+                <p>₹999</p>
+                <button class="add-to-cart" id="order" data-name="Hoodie" data-price="999" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVWKUj5itDZh6SmsFJBz9HSFhBKX_eHNV3EQ&s">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZeQrSd1wAQmhSm5qOcTM4-2eO25QEjqKow&s" alt="Cool Cap">
+                <h3>Cap</h3>
+                <p>₹299</p>
+                <button class="add-to-cart" id="order" data-name="Cap" data-price="299" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDZeQrSd1wAQmhSm5qOcTM4-2eO25QEjqKow&s">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdcImQhcMIMysUb7_GpZf3eX-Q1nRoDYeWqg&s" alt="Event Mug">
+                <h3>Mug</h3>
+                <p>₹199</p>
+                <button class="add-to-cart" id="order" data-name="Mug" data-price="199" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdcImQhcMIMysUb7_GpZf3eX-Q1nRoDYeWqg&s">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLyIsRgio0Mc4HDlengv8oG5onrEkXB5RHcw&s" alt="Event Mug">
+                <h3>Sticker</h3>
+                <p>₹99</p>
+                <button class="add-to-cart" id="order" data-name="Sticker" data-price="99" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLyIsRgio0Mc4HDlengv8oG5onrEkXB5RHcw&s">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8j6eYg3lVKU8kOMTUfhIuhN78BHYP5Po8Mg&s" alt="Event Mug">
+                <h3>Band</h3>
+                <p>₹99</p>
+                <button class="add-to-cart" id="order" data-name="Band" data-price="99" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8j6eYg3lVKU8kOMTUfhIuhN78BHYP5Po8Mg&s">Add to Cart</button>
+            </div>
         </div>
     </div>
-</div>
+            <section id="orderPage" style="display: none;">
+                <h1>🛒 Your Cart</h1>
+                <div id="cartItems"></div> <!-- ✅ This will contain dynamically added cart items -->            
+                <button id="bckshop">Back to Shop</button>
+        </section>
 </section>
+
 <section id="page4">
     <div class="page4">
+    
       <h1>REGISTER NOW!</h1>
       <div class="cont">
-    <div class="card">
+    <div class="card" style="display: none;">
         <h2>Order Summary</h2>
         <div class="cart-summary">
             <div class="cart-item">
@@ -143,9 +187,8 @@
                 <strong>Total:</strong> ₹1498
             </div>
         </div>
-        <button>Place Order</button>
+        <button id="checkoutButton">Place Order</button>
     </div>
-
     <!-- Right: Event Registration & Form -->
     <div class="card">
         <div class="qr-section">
@@ -170,6 +213,7 @@
   </div>
 </div>
 </section>
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
@@ -179,5 +223,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="script.js"></script>
+<script src="official.js"></script>
 </body>
 </html>

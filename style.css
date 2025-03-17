@@ -246,6 +246,164 @@ color: #1E90FF;
     width: 100%;
 } 
 
+.add-to-cart {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+}
+#cartchlo{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    left: 100%;
+} */
+
+#formPage {
+    display: none;
+    text-align: center;
+}
+#eventTitle{
+    font-size:50px; 
+    margin-top: 0vw;
+    margin-bottom: 3vw;
+}
+.container {
+    background: #76b5f8;
+    padding: 170px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 50%;
+    margin-left: 23%;
+}
+
+input, select {
+
+    width: 0%;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#submit, #back {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 25%;
+    border-radius: 5px;
+}
+#submit{
+    background-color: #0056b3;
+}
+ #back:hover {
+    background: #0056b3;
+}
+#submit:hover{
+    background-color: red;
+}
+
+#orderPage {
+    display: none;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 30px;
+    min-height: 100vh;
+
+}
+
+#orderPage h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#orderitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.cart-item img {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cart-item span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+}
+
+.cart-item p {
+    font-size: 16px;
+    color: #666;
+    margin: 25px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#remove {
+    background: red;
+    color: white;
+}
+
+#remove:hover {
+    background: darkred;
+}
+
+#bckshop {
+    background: #007bff;
+    color: white;
+}
+
+#bckshop:hover {
+    background: #0056b3;
+}
+
 
 #page4{
     background: #1e1e1e; 
@@ -337,6 +495,21 @@ input, textarea, select {
     width: 100%;
     background: #3a3a3a;
     color: white;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+.close-btn:hover {
+    background: darkred;
 }
 
 @media (max-width: 768px) {

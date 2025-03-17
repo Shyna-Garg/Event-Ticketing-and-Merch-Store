@@ -22,13 +22,7 @@ function init() {
     ScrollTrigger.refresh();
 }
 init();
-
-// function circleMouse() {
-//     window.addEventListener("mousemove", function (dets) {
-//         document.querySelector('#minicircle').style.transform = `translate(${dets.clientX}px,${dets.clientY}px)`;
-//     });
-// }
-// circleMouse();                
+             
 function circleMouse() {
   var miniCircle = document.querySelector("#minicircle");
 
@@ -46,12 +40,6 @@ circleMouse();
 
  function textAnim(){
     var tl2=gsap.timeline();
-    //     tl2.from("#text",{
-    //    y:"-10",
-    //    opacity:0,
-    //    duration:2,
-    //    ease:Expo.easeInOut
-    //     })
        tl2.to(".boundingelem",{
       y:0,
         ease:Expo.easeInOut,
@@ -166,4 +154,7 @@ var boxes=document.querySelectorAll(".box")
                 console.error("Error accessing camera:", err);
             });
     });
+    
+
+
     
